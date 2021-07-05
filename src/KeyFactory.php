@@ -16,7 +16,7 @@ class KeyFactory
      *
      * @return string
      */
-    public static function generate(string $prefix, int|null $length = null): string
+    public static function generate(string $prefix, int | null $length = null): string
     {
         if (is_null($length)) {
             $length = config(

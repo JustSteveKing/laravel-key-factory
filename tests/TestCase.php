@@ -2,8 +2,8 @@
 
 namespace JustSteveKing\KeyFactory\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use JustSteveKing\KeyFactory\KeyFactoryServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

@@ -4,7 +4,6 @@ namespace JustSteveKing\KeyFactory\Tests;
 
 use Illuminate\Support\Str;
 use JustSteveKing\KeyFactory\KeyFactory;
-use JustSteveKing\KeyFactory\KeyFactoryFacade;
 
 class KeyFactoryTest extends TestCase
 {
