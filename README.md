@@ -19,7 +19,7 @@ You can publish and run the migrations with:
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="JustSteveKing\KeyFactory\KeyFactoryServiceProvider" --tag="laravel-key-factory-config"
+php artisan vendor:publish --provider="JustSteveKing\KeyFactory\KeyFactoryServiceProvider" --tag="key-factory-config"
 ```
 
 This is the contents of the published config file:
