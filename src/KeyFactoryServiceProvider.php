@@ -23,7 +23,7 @@ class KeyFactoryServiceProvider extends PackageServiceProvider
 
         Str::macro(
             name: 'key',
-            macro: fn (string $prefix, int|null $length = null) => KeyFactory::generate(
+            macro: fn (string $prefix, int | null $length = null) => KeyFactory::generate(
                 prefix: $prefix,
                 length: $length,
             ),
