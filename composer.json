@@ -1,18 +1,19 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "juststeveking/laravel-key-factory",
+    "description": "A simple package to generate Eloquent Model Keys",
     "keywords": [
-        ":vendor_name",
+        "JustSteveKing",
         "laravel",
-        "package_slug"
+        "laravel-key-factory"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/juststeveking/laravel-key-factory",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
-            "role": "Developer"
+            "role": "Developer",
+            "name": "Steve McDougall",
+            "email": "juststevemcd@gmail.com",
+            "homepage": "https://www.juststeveking.uk/"
         }
     ],
     "require": {
@@ -30,13 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "JustSteveKing\\KeyFactory\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "JustSteveKing\\KeyFactory\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,16 +45,15 @@
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
-            }
+                "JustSteveKing\\KeyFactory\\KeyFactoryServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
